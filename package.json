@@ -27,8 +27,5 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
-  },
-  "dependencies": {
-    "bedrock-protocol": "^3.29.0"
   }
 }
