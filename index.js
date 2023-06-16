@@ -6,7 +6,17 @@ const TOKEN = process.env.TOKEN
 const PUBLIC_KEY = process.env.PUBLIC_KEY || 'not set'
 const GUILD_ID = process.env.GUILD_ID 
 
-const botbc = require('./bot.js');
+const bedrock = require('bedrock-protocol') 
+const client = bedrock.createClient({ 
+host: 'MoonLightSMPG2.aternos.me', 
+port: 64319, 
+version: '1.20.0', 
+username: 'Bot22', 
+offline: true
+}) 
+
+console.log ('connected') 
+console.log ('Hit Control C If you want to stop')
 const axios = require('axios');
 const express = require('express');
 const { InteractionType, InteractionResponseType, verifyKeyMiddleware } = require('discord-interactions');
